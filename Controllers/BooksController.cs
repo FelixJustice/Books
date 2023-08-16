@@ -6,7 +6,7 @@ using Microsoft.EntityFrameworkCore;
 
 namespace Books.Controllers
 {
-    [Route("api/[controller]")]
+    [Route("[controller]")]
     [ApiController]
     public class BooksController : ControllerBase
     {

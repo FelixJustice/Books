@@ -15,8 +15,17 @@ This project has 4 http triggers.
 `GET /Books`
 
   curl -i -H 'Accept: application/json' http://localhost:9000/Books/
+  Gives all the books in the database. This trigger has also three optional query parameters: author=text, year=number and publisher=text.
 
-=> Gives all the books in the database. This trigger has also three optional query parameters: author=text, year=number and publisher=text.
+### Response
+      {
+        "id": 2,
+        "title": "Old Testament",
+        "author": "Various",
+        "year": -165,
+        "publisher": null,
+        "description": "A holy book of Christianity and Jewish faith"
+      }
 
 GET: baseurl/Books/{id} => Goes and fetches that id's book from database.
 

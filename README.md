@@ -12,7 +12,7 @@ This project has 4 http triggers.
 
 ### Request
 
-`GET /Books´
+`GET /Books`
 
   curl -i -H 'Accept: application/json' http://localhost:7000/thing/
 

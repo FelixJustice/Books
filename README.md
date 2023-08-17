@@ -4,10 +4,15 @@ This project is a very simple web backend built on .net core web api. That can f
 
 ## Setup:
 <p>You can find the SQLite database within this project called books.db. To be able to access it for studying or editing purposes you can download SQLiteStudio to your computer which you can find via the following link: https://sqlitestudio.pl/.</p>
+
+<p>Then when you are ready copy this project to your local machine and open it with e.g. Visual Studio(has to be 2022 version).</p>
+
 <p>Before running the project go into Program.cs and add the right path into the books.db by editing this part in the file: 
     builder.Services.AddDbContext<BooksContext>(options =>
     options.UseSqlite(builder.Configuration.GetConnectionString("Data Source={The path to the books.db in the project}")));</p>
-<p>Then when you are ready copy this project to your local machine and open it with Visual Studio for example and hit the F10 button to run the project.</p>
+        
+<p>Hit the F10 button to run the project.</p>
+
 <p>When project is running you can test it out with Postman(download link https://www.postman.com/downloads/) and start doing API calls.</p>
 
 ## Project:
